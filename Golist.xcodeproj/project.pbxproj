@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		868D59DF53D695D7B674A079 /* Pods_Golist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD312167E023A89C934AFDF /* Pods_Golist.framework */; };
 		B86BCBC22033B00400A8F87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BCBC12033B00400A8F87A /* AppDelegate.swift */; };
 		B86BCBC42033B00400A8F87A /* GoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BCBC32033B00400A8F87A /* GoListViewController.swift */; };
 		B86BCBC72033B00400A8F87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86BCBC52033B00400A8F87A /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DD312167E023A89C934AFDF /* Pods_Golist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0DB22CD051DD0AD916778D /* Pods-Golist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golist/Pods-Golist.debug.xcconfig"; sourceTree = "<group>"; };
 		B86BCBBE2033B00400A8F87A /* Golist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86BCBC12033B00400A8F87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86BCBC32033B00400A8F87A /* GoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoListViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B86BCBCB2033B00400A8F87A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B86BCBCD2033B00400A8F87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B86BCBD32033B3E000A8F87A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		BA6BD7AFF7662B2D7BF5C04E /* Pods-Golist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golist.release.xcconfig"; path = "Pods/Target Support Files/Pods-Golist/Pods-Golist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868D59DF53D695D7B674A079 /* Pods_Golist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3862B5A15F2B0C6383EC207C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0DB22CD051DD0AD916778D /* Pods-Golist.debug.xcconfig */,
+				BA6BD7AFF7662B2D7BF5C04E /* Pods-Golist.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B86BCBB52033B00400A8F87A = {
 			isa = PBXGroup;
 			children = (
 				B86BCBC02033B00400A8F87A /* Golist */,
 				B86BCBBF2033B00400A8F87A /* Products */,
+				3862B5A15F2B0C6383EC207C /* Pods */,
+				DD65A78393B5C0791C7E2477 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = Golist;
 			sourceTree = "<group>";
 		};
+		DD65A78393B5C0791C7E2477 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DD312167E023A89C934AFDF /* Pods_Golist.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B86BCBD02033B00400A8F87A /* Build configuration list for PBXNativeTarget "Golist" */;
 			buildPhases = (
+				E04666A79CF28AEFA1668348 /* [CP] Check Pods Manifest.lock */,
 				B86BCBBA2033B00400A8F87A /* Sources */,
 				B86BCBBB2033B00400A8F87A /* Frameworks */,
 				B86BCBBC2033B00400A8F87A /* Resources */,
+				6E834994EACFC2849BB7AE1B /* [CP] Embed Pods Frameworks */,
+				022827070855F20CE34ED347 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		022827070855F20CE34ED347 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Golist/Pods-Golist-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E834994EACFC2849BB7AE1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Golist/Pods-Golist-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Golist/Pods-Golist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E04666A79CF28AEFA1668348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Golist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B86BCBBA2033B00400A8F87A /* Sources */ = {
@@ -276,6 +359,7 @@
 		};
 		B86BCBD12033B00400A8F87A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0DB22CD051DD0AD916778D /* Pods-Golist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +375,7 @@
 		};
 		B86BCBD22033B00400A8F87A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA6BD7AFF7662B2D7BF5C04E /* Pods-Golist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
