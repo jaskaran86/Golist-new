@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		868D59DF53D695D7B674A079 /* Pods_Golist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD312167E023A89C934AFDF /* Pods_Golist.framework */; };
+		B811AFA92036144800FB458B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811AFA82036144800FB458B /* Item.swift */; };
+		B811AFAB2036145300FB458B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B811AFAA2036145300FB458B /* Category.swift */; };
 		B86BCBC22033B00400A8F87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BCBC12033B00400A8F87A /* AppDelegate.swift */; };
 		B86BCBC42033B00400A8F87A /* GoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BCBC32033B00400A8F87A /* GoListViewController.swift */; };
 		B86BCBC72033B00400A8F87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B86BCBC52033B00400A8F87A /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		7DD312167E023A89C934AFDF /* Pods_Golist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0DB22CD051DD0AD916778D /* Pods-Golist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golist.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golist/Pods-Golist.debug.xcconfig"; sourceTree = "<group>"; };
+		B811AFA82036144800FB458B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B811AFAA2036145300FB458B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B86BCBBE2033B00400A8F87A /* Golist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B86BCBC12033B00400A8F87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B86BCBC32033B00400A8F87A /* GoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoListViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,41 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B811AFAC203619EC00FB458B /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				B811AFAA2036145300FB458B /* Category.swift */,
+				B811AFA82036144800FB458B /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		B811AFAD20361A0E00FB458B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B86BCBD32033B3E000A8F87A /* CategoryViewController.swift */,
+				B86BCBC32033B00400A8F87A /* GoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B811AFAE20361A1C00FB458B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B86BCBC52033B00400A8F87A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B811AFAF20361F3500FB458B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B86BCBCA2033B00400A8F87A /* LaunchScreen.storyboard */,
+				B86BCBC82033B00400A8F87A /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B86BCBB52033B00400A8F87A = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				B86BCBC12033B00400A8F87A /* AppDelegate.swift */,
-				B86BCBD32033B3E000A8F87A /* CategoryViewController.swift */,
-				B86BCBC32033B00400A8F87A /* GoListViewController.swift */,
-				B86BCBC52033B00400A8F87A /* Main.storyboard */,
-				B86BCBCA2033B00400A8F87A /* LaunchScreen.storyboard */,
-				B86BCBC82033B00400A8F87A /* Assets.xcassets */,
+				B811AFAD20361A0E00FB458B /* Controllers */,
+				B811AFAC203619EC00FB458B /* Data Model */,
+				B811AFAE20361A1C00FB458B /* View */,
+				B811AFAF20361F3500FB458B /* Supporting Files */,
 				B86BCBCD2033B00400A8F87A /* Info.plist */,
 			);
 			path = Golist;
@@ -222,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B811AFA92036144800FB458B /* Item.swift in Sources */,
 				B86BCBC42033B00400A8F87A /* GoListViewController.swift in Sources */,
 				B86BCBD42033B3E000A8F87A /* CategoryViewController.swift in Sources */,
 				B86BCBC22033B00400A8F87A /* AppDelegate.swift in Sources */,
+				B811AFAB2036145300FB458B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
