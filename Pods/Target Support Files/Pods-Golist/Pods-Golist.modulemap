@@ -1,0 +1,6 @@
+framework module Pods_Golist {
+  umbrella header "Pods-Golist-umbrella.h"
+
+  export *
+  module * { export * }
+}

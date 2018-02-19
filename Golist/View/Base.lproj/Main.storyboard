@@ -51,9 +51,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="End-A5-SQK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="-531"/>
+            <point key="canvasLocation" x="202" y="-531"/>
         </scene>
-        <!--Category View Controller-->
+        <!--Golist-->
         <scene sceneID="xgm-yr-UYj">
             <objects>
                 <tableViewController id="aFi-2J-hWa" customClass="CategoryViewController" customModule="Golist" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +76,7 @@
                             <outlet property="delegate" destination="aFi-2J-hWa" id="bfF-uE-Aan"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="JRS-Ks-eW7">
+                    <navigationItem key="navigationItem" title="Golist" id="JRS-Ks-eW7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="k7l-ap-jF9">
                             <connections>
                                 <action selector="addButtonPressed:" destination="aFi-2J-hWa" id="aiD-nQ-XUg"/>
@@ -89,7 +89,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ChO-fn-zhn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-167" y="-531"/>
+            <point key="canvasLocation" x="-412" y="-531"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sPj-AE-JRV">
